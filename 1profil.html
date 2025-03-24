@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>O’Bitoun Travel - Profil</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    .profile-section {
+      background: url('https://www.1jour1actu.com/wp-content/uploads/2022/10/1J1A_Bresil_AdobeStock_75582352.jpg') no-repeat center center/cover;
+      padding: 50px;
+      text-align: center;
+    }
+    .profile-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1 class="main-title">O’Bitoun Travel</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="recherche.html">Rechercher un voyage</a></li>
+        <li><a href="inscription.html">Inscription</a></li>
+        <li><a href="connexion.html">Connexion</a></li>
+        <li><a href="profil.html" class="active">Profil</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="profile-section">
+      <h2>Mon Profil</h2>
+      <div class="profile-container" id="profile-info">
+        <!-- Les infos du user (login, email, etc.) seront chargées via JS -->
+      </div>
+      <p>
+        <a href="php/logout.php" class="btn">Se déconnecter</a>
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 O’Bitoun Travel - Tous droits réservés</p>
+  </footer>
+
+  <script>
+    // Appel AJAX pour charger les infos du user
+    fetch('php/profile_data.php')
+      .then(res => res.json())
+      .then(data => {
+        if (data.error) {
+          alert(data.error);
+          window.location.href = 'connexion.html';
+          return;
+        }
+        // Sinon, on affiche
+        const container = document.getElementById('profile-info');
+        const user = data.user;
+        container.innerHTML = `
+          <p><strong>Login :</strong> ${user.login}</p>
+          <p><strong>Nom :</strong> ${user.nom}</p>
+          <p><strong>Prénom :</strong> ${user.prenom}</p>
+          <p><strong>Email :</strong> ${user.email}</p>
+          <p><strong>Rôle :</strong> ${user.role}</p>
+          <p><strong>Date d'inscription :</strong> ${user.dateInscription}</p>
+        `;
+      })
+      .catch(err => console.error(err));
+  </script>
+</body>
+</html>
