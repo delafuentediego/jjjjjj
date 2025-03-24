@@ -1,0 +1,258 @@
+/* styles.css */
+
+/* Réinitialisation de base */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #1B3A4B;
+}
+
+/* En-tête */
+header {
+    background: linear-gradient(90deg, #1B3A4B, #70A288);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+}
+
+.main-title {
+    font-size: 5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    background-color: #1B3A4B;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a.active {
+    background-color: #ffffff;
+    color: #1B3A4B;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-shadow: none;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #70A288;
+    border-radius: 5px;
+}
+
+/* Section Hero */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.overlay h2 {
+    font-size: 5vw;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #70A288;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block;
+    font-size: 4vw;
+}
+
+.btn:hover {
+    background-color: #1B3A4B;
+}
+
+/* Pied de page */
+footer {
+    background-color: #1B3A4B;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 2.5vw;
+}
+
+/* Table pour la page admin */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table th,
+.admin-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.admin-table th {
+    background-color: #70A288;
+    color: white;
+    font-weight: bold;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f4f7f6;
+}
+
+.admin-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Boutons d'action pour l'admin */
+.btn-action {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-action.vip {
+    background-color: #70A288;
+    color: white;
+}
+
+.btn-action.ban {
+    background-color: #D9534F;
+    color: white;
+}
+
+.btn-action.revoke-vip {
+    background-color: #FF9800;
+    color: white;
+}
+
+.btn-action.unban {
+    background-color: #5BC0DE;
+    color: white;
+}
+
+.btn-action:hover {
+    opacity: 0.8;
+}
+
+/* Formulaire de recherche */
+.quick-search,
+.filter-form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.quick-search input,
+.filter-form input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.quick-search button,
+.filter-form button {
+    background-color: #70A288;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.quick-search button:hover,
+.filter-form button:hover {
+    background-color: #1B3A4B;
+    color: white;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+    .main-title {
+        font-size: 48px;
+    }
+
+    .overlay h2 {
+        font-size: 36px;
+    }
+
+    .overlay p {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .quick-search input,
+    .filter-form input {
+        width: 50%;
+    }
+
+    .quick-search button,
+    .filter-form button {
+        font-size: 14px;
+    }
+}
