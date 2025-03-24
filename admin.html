@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrateur - O’Bitoun Travel</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body class="admin">
+  <header>
+    <h1 class="main-title">O’Bitoun Travel - Administration</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="recherche.html">Rechercher un voyage</a></li>
+        <li><a href="inscription.html">Inscription</a></li>
+        <li><a href="connexion.html">Connexion</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="admin.html" class="active">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" style="background: url('https://muralconcept.fr/cdn/shop/files/Papierpeintpanoramique-ForetdePins-Original-MC-741342.jpg?v=1711214768') no-repeat center center/cover;">
+      <div class="overlay">
+        <h2>Gestion des utilisateurs</h2>
+        <p>Gérez vos clients, modifiez leurs privilèges et gardez le contrôle.</p>
+      </div>
+    </section>
+    <section class="admin-section">
+      <h2>Liste des utilisateurs</h2>
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nom d'utilisateur</th>
+            <th>Email</th>
+            <th>Statut</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="user-table-body">
+          <!-- Les données des utilisateurs seront ajoutées dynamiquement ici -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 O’Bitoun Travel - Tous droits réservés</p>
+  </footer>
+  <!-- Optionnel : un fichier JS si tu veux charger la liste en AJAX -->
+  <!-- <script src="js/admin.js"></script> -->
+</body>
+</html>
