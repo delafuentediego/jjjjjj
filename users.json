@@ -3,47 +3,52 @@
     {
       "id": 1,
       "login": "admin1",
-      "password": "adminpass1",
+      "password": "admin1pass",
       "role": "admin",
       "nom": "Doe",
       "prenom": "John",
-      "email": "admin1@example.com"
+      "email": "admin1@example.com",
+      "dateInscription": "2025-01-01"
     },
     {
       "id": 2,
       "login": "admin2",
-      "password": "adminpass2",
+      "password": "admin2pass",
       "role": "admin",
       "nom": "Smith",
-      "prenom": "Anna",
-      "email": "admin2@example.com"
+      "prenom": "Jane",
+      "email": "admin2@example.com",
+      "dateInscription": "2025-01-02"
     },
     {
       "id": 3,
       "login": "user1",
-      "password": "userpass1",
+      "password": "user1pass",
       "role": "user",
       "nom": "Martin",
       "prenom": "Paul",
-      "email": "user1@example.com"
+      "email": "user1@example.com",
+      "dateInscription": "2025-01-10"
     },
     {
       "id": 4,
       "login": "user2",
-      "password": "userpass2",
+      "password": "user2pass",
       "role": "user",
       "nom": "Dupont",
       "prenom": "Marie",
-      "email": "user2@example.com"
+      "email": "user2@example.com",
+      "dateInscription": "2025-01-11"
     },
     {
       "id": 5,
       "login": "user3",
-      "password": "userpass3",
+      "password": "user3pass",
       "role": "user",
       "nom": "Leblanc",
       "prenom": "Luc",
-      "email": "user3@example.com"
+      "email": "user3@example.com",
+      "dateInscription": "2025-01-12"
     }
   ]
 }
