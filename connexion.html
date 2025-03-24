@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O’Bitoun Travel - Connexion</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    .form-section {
+      background: url('https://cdn.getyourguide.com/img/country/5d273254dfdc0.jpeg/88.jpg') no-repeat center center/cover;
+      padding: 50px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .form-container {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    .form-section h2 {
+      color: white;
+    }
+    nav ul li a.active {
+      background-color: white;
+      color: #1B3A4B;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 10px 15px;
+      text-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1 class="main-title">O’Bitoun Travel</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="recherche.html">Rechercher un voyage</a></li>
+        <li><a href="inscription.html">Inscription</a></li>
+        <li><a href="connexion.html" class="active">Connexion</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="form-section">
+      <h2>Connexion</h2>
+      <form action="traitement_connexion.php" method="POST" class="form-container">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" class="btn">Se connecter</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 O’Bitoun Travel - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
