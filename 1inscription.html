@@ -7,4 +7,73 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
   <style>
     .form-section {
-      background: url('https://th.bing.com/th/id/R.b03754303e04fdfc6b5752f925217db1?rik=%2fpfOKep1laGd3A&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fFAX
+      background: url('https://th.bing.com/th/id/R.b03754303e04fdfc6b5752f925217db1?rik=%2fpfOKep1laGd3A&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fFAX9Jf5.jpg&ehk=%2bcmNHS0kMwNO1i0cDnFncHBY%2fIqxsrDyFd%2fatMrNLVY%3d&risl=&pid=ImgRaw&r=0') no-repeat center center/cover;
+      padding: 50px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .form-container {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    .form-section h2 {
+      color: white;
+    }
+    nav ul li a.active {
+      background-color: white;
+      color: #1B3A4B;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 10px 15px;
+      text-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1 class="main-title">O’Bitoun Travel</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="recherche.html">Rechercher un voyage</a></li>
+        <li><a href="inscription.html" class="active">Inscription</a></li>
+        <li><a href="connexion.html">Connexion</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="form-section">
+      <h2>Inscription</h2>
+      <!-- Le formulaire pointe vers le script PHP de traitement -->
+      <form action="php/traitement_inscription.php" method="POST" class="form-container">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm-password">Confirmer le mot de passe :</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+
+        <button type="submit" class="btn">S'inscrire</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 O’Bitoun Travel - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
