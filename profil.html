@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O’Bitoun Travel - Profil</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    .profile-section {
+      background: url('https://www.1jour1actu.com/wp-content/uploads/2022/10/1J1A_Bresil_AdobeStock_75582352.jpg') no-repeat center center/cover;
+      padding: 50px;
+      text-align: center;
+    }
+    .profile-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      text-align: left;
+    }
+    .edit-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2em;
+      color: #1B3A4B;
+    }
+    .edit-btn:hover {
+      color: #70A288;
+    }
+    .profile-container input {
+      border: 1px solid #ccc;
+      padding: 5px;
+      border-radius: 5px;
+      width: 100%;
+      margin-top: 5px;
+    }
+  </style>
+  <script>
+    function enableEdit(id) {
+      document.getElementById(id).removeAttribute('readonly');
+      document.getElementById(id).focus();
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1 class="main-title">O’Bitoun Travel</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="recherche.html">Rechercher un voyage</a></li>
+        <li><a href="inscription.html">Inscription</a></li>
+        <li><a href="connexion.html">Connexion</a></li>
+        <li><a href="profil.html" class="active">Profil</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="profile-section">
+      <h2>Mon Profil</h2>
+      <div class="profile-container">
+        <label for="nom"><strong>Nom :</strong></label>
+        <input type="text" id="nom" readonly>
+        <button class="edit-btn" onclick="enableEdit('nom')"><i class="fas fa-pencil-alt"></i></button>
+
+        <label for="email"><strong>Email :</strong></label>
+        <input type="email" id="email" readonly>
+        <button class="edit-btn" onclick="enableEdit('email')"><i class="fas fa-pencil-alt"></i></button>
+
+        <label for="password"><strong>Mot de passe :</strong></label>
+        <input type="password" id="password" readonly>
+        <button class="edit-btn" onclick="enableEdit('password')"><i class="fas fa-pencil-alt"></i></button>
+
+        <label for="adresse"><strong>Adresse :</strong></label>
+        <input type="text" id="adresse" readonly>
+        <button class="edit-btn" onclick="enableEdit('adresse')"><i class="fas fa-pencil-alt"></i></button>
+
+        <button class="btn">Enregistrer les modifications</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 O’Bitoun Travel - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
