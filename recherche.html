@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rechercher un voyage - O’Bitoun Travel</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    /* Styles spécifiques à cette page */
+    .filter-form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      flex: 1;
+      min-width: 180px;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      background-color: white;
+      color: black;
+    }
+    .form-group label {
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+    }
+  </style>
+</head>
+<body class="recherche">
+  <header>
+    <h1 class="main-title">O’Bitoun Travel</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="recherche.html" class="active">Rechercher un voyage</a></li>
+        <li><a href="inscription.html">Inscription</a></li>
+        <li><a href="connexion.html">Connexion</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" style="background: url('https://upload.wikimedia.org/wikipedia/commons/5/57/Basilica_of_Our_Lady_of_the_Pillar_and_the_Ebro_River%2C_Zaragoza.jpg') no-repeat center center/cover;">
+      <div class="overlay">
+        <h2>Trouvez votre prochaine destination</h2>
+        <form action="#" method="get" class="filter-form">
+          <div class="form-group">
+            <label for="destination">Destination :</label>
+            <input type="text" id="destination" name="destination" placeholder="Ex. Paris, New York">
+          </div>
+          <div class="form-group">
+            <label for="start-date">Date de début :</label>
+            <input type="date" id="start-date" name="start-date">
+          </div>
+          <div class="form-group">
+            <label for="end-date">Date de fin :</label>
+            <input type="date" id="end-date" name="end-date">
+          </div>
+          <div class="form-group">
+            <label for="options">Options :</label>
+            <select id="options" name="options">
+              <option value="">Choisissez une option</option>
+              <option value="budget">Budget</option>
+              <option value="luxury">Luxe</option>
+              <option value="family">Famille</option>
+              <option value="adventure">Aventure</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Rechercher</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 O’Bitoun Travel - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
