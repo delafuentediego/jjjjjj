@@ -1,0 +1,55 @@
+{
+  "voyages": [
+    {
+      "id": 101,
+      "title": "Découverte de Paris",
+      "dateDebut": "2025-04-10",
+      "dateFin": "2025-04-15",
+      "prixBase": 800,
+      "etapes": [
+        {
+          "titreEtape": "Tour Eiffel",
+          "options": ["Visite guidée", "Visite libre"]
+        },
+        {
+          "titreEtape": "Musée du Louvre",
+          "options": ["Billet coupe-file", "Visite guidée", "Visite libre"]
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "title": "Safari en Tanzanie",
+      "dateDebut": "2025-06-01",
+      "dateFin": "2025-06-10",
+      "prixBase": 2000,
+      "etapes": [
+        {
+          "titreEtape": "Parc du Serengeti",
+          "options": ["Campement", "Lodge de luxe"]
+        },
+        {
+          "titreEtape": "Ngorongoro",
+          "options": ["Safari 4x4 privé", "Safari 4x4 partagé"]
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "title": "Aventure au Japon",
+      "dateDebut": "2025-07-05",
+      "dateFin": "2025-07-15",
+      "prixBase": 1800,
+      "etapes": [
+        {
+          "titreEtape": "Tokyo",
+          "options": ["Hôtel capsule", "Ryokan traditionnel"]
+        },
+        {
+          "titreEtape": "Kyoto",
+          "options": ["Hôtel 3 étoiles", "Hôtel 5 étoiles"]
+        }
+      ]
+    }
+  ]
+}
