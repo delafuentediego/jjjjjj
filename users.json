@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "admin1",
+      "password": "adminpass1",
+      "role": "admin",
+      "nom": "Doe",
+      "prenom": "John",
+      "email": "admin1@example.com"
+    },
+    {
+      "id": 2,
+      "login": "admin2",
+      "password": "adminpass2",
+      "role": "admin",
+      "nom": "Smith",
+      "prenom": "Anna",
+      "email": "admin2@example.com"
+    },
+    {
+      "id": 3,
+      "login": "user1",
+      "password": "userpass1",
+      "role": "user",
+      "nom": "Martin",
+      "prenom": "Paul",
+      "email": "user1@example.com"
+    },
+    {
+      "id": 4,
+      "login": "user2",
+      "password": "userpass2",
+      "role": "user",
+      "nom": "Dupont",
+      "prenom": "Marie",
+      "email": "user2@example.com"
+    },
+    {
+      "id": 5,
+      "login": "user3",
+      "password": "userpass3",
+      "role": "user",
+      "nom": "Leblanc",
+      "prenom": "Luc",
+      "email": "user3@example.com"
+    }
+  ]
+}
