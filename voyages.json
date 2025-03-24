@@ -2,31 +2,14 @@
   "voyages": [
     {
       "id": 101,
-      "title": "Découverte de Paris",
-      "dateDebut": "2025-04-10",
-      "dateFin": "2025-04-15",
-      "prixBase": 800,
-      "etapes": [
-        {
-          "titreEtape": "Tour Eiffel",
-          "options": ["Visite guidée", "Visite libre"]
-        },
-        {
-          "titreEtape": "Musée du Louvre",
-          "options": ["Billet coupe-file", "Visite guidée", "Visite libre"]
-        }
-      ]
-    },
-    {
-      "id": 102,
       "title": "Safari en Tanzanie",
-      "dateDebut": "2025-06-01",
-      "dateFin": "2025-06-10",
+      "dateDebut": "2025-06-10",
+      "dateFin": "2025-06-20",
       "prixBase": 2000,
       "etapes": [
         {
-          "titreEtape": "Parc du Serengeti",
-          "options": ["Campement", "Lodge de luxe"]
+          "titreEtape": "Serengeti",
+          "options": ["Lodge", "Bivouac"]
         },
         {
           "titreEtape": "Ngorongoro",
@@ -35,19 +18,240 @@
       ]
     },
     {
-      "id": 103,
-      "title": "Aventure au Japon",
-      "dateDebut": "2025-07-05",
-      "dateFin": "2025-07-15",
-      "prixBase": 1800,
+      "id": 102,
+      "title": "Découverte du Japon",
+      "dateDebut": "2025-07-01",
+      "dateFin": "2025-07-14",
+      "prixBase": 2500,
       "etapes": [
         {
           "titreEtape": "Tokyo",
-          "options": ["Hôtel capsule", "Ryokan traditionnel"]
+          "options": ["Hôtel Capsule", "Ryokan", "Hôtel Standard"]
         },
         {
           "titreEtape": "Kyoto",
-          "options": ["Hôtel 3 étoiles", "Hôtel 5 étoiles"]
+          "options": ["Visite guidée", "Visite libre"]
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "title": "Croisière en Antarctique",
+      "dateDebut": "2025-12-01",
+      "dateFin": "2025-12-15",
+      "prixBase": 5000,
+      "etapes": [
+        {
+          "titreEtape": "Péninsule Antarctique",
+          "options": ["Brise-glace", "Bateau de luxe"]
+        },
+        {
+          "titreEtape": "Île subantarctique",
+          "options": ["Randonnée encadrée", "Excursion zodiac"]
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "title": "Aventure en Amazonie",
+      "dateDebut": "2025-03-15",
+      "dateFin": "2025-03-25",
+      "prixBase": 1800,
+      "etapes": [
+        {
+          "titreEtape": "Manaus",
+          "options": ["Hôtel 3 étoiles", "Auberge"]
+        },
+        {
+          "titreEtape": "Expédition en pirogue",
+          "options": ["Collective", "Privée"]
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "title": "Roadtrip en Californie",
+      "dateDebut": "2025-05-10",
+      "dateFin": "2025-05-20",
+      "prixBase": 1500,
+      "etapes": [
+        {
+          "titreEtape": "Los Angeles",
+          "options": ["Motel", "Hôtel standard"]
+        },
+        {
+          "titreEtape": "San Francisco",
+          "options": ["Visite d'Alcatraz", "Tour en bus"]
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "title": "Trekking au Népal",
+      "dateDebut": "2025-09-01",
+      "dateFin": "2025-09-15",
+      "prixBase": 2200,
+      "etapes": [
+        {
+          "titreEtape": "Kathmandu",
+          "options": ["Guesthouse", "Hôtel 2 étoiles"]
+        },
+        {
+          "titreEtape": "Camp de base",
+          "options": ["Tente partagée", "Tente individuelle"]
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "title": "Séjour à Bali",
+      "dateDebut": "2025-08-05",
+      "dateFin": "2025-08-12",
+      "prixBase": 1300,
+      "etapes": [
+        {
+          "titreEtape": "Ubud",
+          "options": ["Villas privées", "Hôtel Spa"]
+        },
+        {
+          "titreEtape": "Côte Sud",
+          "options": ["Surf guidé", "Plage libre"]
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "title": "Tour d'Europe",
+      "dateDebut": "2025-04-01",
+      "dateFin": "2025-04-20",
+      "prixBase": 3000,
+      "etapes": [
+        {
+          "titreEtape": "Paris",
+          "options": ["Visite Tour Eiffel", "Musée du Louvre"]
+        },
+        {
+          "titreEtape": "Rome",
+          "options": ["Colisée", "Vatican"]
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "title": "Découverte de l'Australie",
+      "dateDebut": "2025-10-01",
+      "dateFin": "2025-10-15",
+      "prixBase": 2800,
+      "etapes": [
+        {
+          "titreEtape": "Sydney",
+          "options": ["Opéra de Sydney", "Plage de Bondi"]
+        },
+        {
+          "titreEtape": "Uluru",
+          "options": ["Randonnée au lever du soleil", "Survol en hélicoptère"]
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "title": "Safari au Kenya",
+      "dateDebut": "2025-06-01",
+      "dateFin": "2025-06-08",
+      "prixBase": 2100,
+      "etapes": [
+        {
+          "titreEtape": "Masai Mara",
+          "options": ["Campement", "Lodge"]
+        },
+        {
+          "titreEtape": "Lac Nakuru",
+          "options": ["Observation des flamants roses", "Safari photo"]
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "title": "Expédition en Alaska",
+      "dateDebut": "2025-02-10",
+      "dateFin": "2025-02-20",
+      "prixBase": 2700,
+      "etapes": [
+        {
+          "titreEtape": "Anchorage",
+          "options": ["Hôtel standard", "Cabane en bois"]
+        },
+        {
+          "titreEtape": "Glacier Bay",
+          "options": ["Kayak", "Croisière glacier"]
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "title": "Voyage culturel en Inde",
+      "dateDebut": "2025-11-01",
+      "dateFin": "2025-11-15",
+      "prixBase": 1900,
+      "etapes": [
+        {
+          "titreEtape": "Delhi",
+          "options": ["Visite du Fort Rouge", "Balade en rickshaw"]
+        },
+        {
+          "titreEtape": "Agra",
+          "options": ["Taj Mahal", "Fatehpur Sikri"]
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "title": "Circuit en Islande",
+      "dateDebut": "2025-03-01",
+      "dateFin": "2025-03-10",
+      "prixBase": 2500,
+      "etapes": [
+        {
+          "titreEtape": "Reykjavik",
+          "options": ["Sources chaudes", "Visite musées"]
+        },
+        {
+          "titreEtape": "Cercle d'Or",
+          "options": ["Geysir", "Chutes de Gullfoss"]
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "title": "Croisière en Méditerranée",
+      "dateDebut": "2025-07-20",
+      "dateFin": "2025-07-30",
+      "prixBase": 1600,
+      "etapes": [
+        {
+          "titreEtape": "Marseille",
+          "options": ["Bateau standard", "Cabine luxe"]
+        },
+        {
+          "titreEtape": "Palma de Majorque",
+          "options": ["Excursion plage", "Balade en catamaran"]
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "title": "Découverte du Maroc",
+      "dateDebut": "2025-09-10",
+      "dateFin": "2025-09-18",
+      "prixBase": 1400,
+      "etapes": [
+        {
+          "titreEtape": "Marrakech",
+          "options": ["Riad traditionnel", "Hammam"]
+        },
+        {
+          "titreEtape": "Désert de Merzouga",
+          "options": ["Bivouac dans les dunes", "Balade à dos de dromadaire"]
         }
       ]
     }
